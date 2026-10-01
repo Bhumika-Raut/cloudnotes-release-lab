@@ -103,3 +103,4 @@ Fix all three, then document your diagnosis and fix in `release-notes.md`.
   never `terraform apply`.
 - Never push images to a paid container registry. The `registry:2` service
   in `compose.yaml` is a free, local artifact store for practice only.
+

@@ -17,4 +17,10 @@ variable "labels" {
     project = "cloudnotes"
     owner   = "platform-team"
   }
-}
+ }
+ 
+ variable "bucket_name_old" {
+  description = "Logical name for the CloudNotes storage bucket (simulated locally)."
+  type        = string
+  default     = "cloudnotes"
+ }

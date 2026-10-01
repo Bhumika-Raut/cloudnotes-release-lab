@@ -3,6 +3,7 @@
 resource "local_file" "bucket_metadata" {
   filename = "${path.module}/../../.generated/${var.environment}-${var.bucket_name}.json"
   content = jsonencode({
+    bucket_name_old = var.bucket_name_old
     bucket_name = var.bucket_name
     environment = var.environment
     labels      = var.labels
